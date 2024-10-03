@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "name": "Albert Sodel",
+        "tags": ["Python", "QA", "Automation"],
+        "description": "Quality Assurance engineer with 10y of experience"
+    },
+    {
+        "id": "2",
+        "name": "Adam Hoffmann",
+        "tags": ["java", "backend", "spring"],
+        "description": "Java developer with 5y of experience"
+    },
+    {
+        "id": "3",
+        "name": "John Doe",
+        "tags": ["rust", "embeded"],
+        "description": "Embeded systems developer"
+    }
+]

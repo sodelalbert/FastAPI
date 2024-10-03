@@ -1,0 +1,16 @@
+# The docker-compose.yaml file is used to define the services, networks, and volumes required by the application.
+# Docker compose features:
+# - Can restart the server when the code changes by custom run command
+# - Sync folder (volume) on your machine to the container to avoid rebuilding the image every time you make a change
+# - Allows to start multiple containers at once
+
+services:
+  app:
+    build: .
+    container_name: simple-python-server
+    # Custom run command to restart the server when the code changes including data files.
+    command: uvicorn main:app --host 0.0.0.0 --port 80 --reload --reload-include *
+    ports:
+      - 8080:80
+    volumes:
+      - .:/app # Sync folder on your machine to the container (current folder to /app folder in the container)
