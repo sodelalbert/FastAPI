@@ -13,4 +13,4 @@ services:
     ports:
       - 8080:80
     volumes:
-      - .:/app # Sync folder on your machine to the container (current folder to /app folder in the container)
+      - ./app:/code # Sync folder on your machine to the container (current folder to /app folder in the container)
