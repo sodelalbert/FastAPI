@@ -3,14 +3,14 @@
 FROM python:latest
 
 # set the working directory
-WORKDIR /app
+WORKDIR /code
 
 # install uv and dependencies
-COPY ./requirements.txt /app
+COPY ./requirements.txt /code/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
-# copy the scripts to the folder
-COPY . /app
+# copy the app folder from reposiroty root to the WORKDIR /code folder in container filesystem
+COPY ./app /code
 
-# start the server
+# start the server using uvicorn, main:app coreposnds to
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
