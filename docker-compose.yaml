@@ -12,5 +12,6 @@ services:
     command: uvicorn main:app --host 0.0.0.0 --port 80 --reload --reload-include *
     ports:
       - 8080:80
+    # Sync folder on your machine to the container (application code folder ./app to /app folder in the container)
     volumes:
-      - ./app:/code # Sync folder on your machine to the container (current folder to /app folder in the container)
+      - ./app:/code
