@@ -5,10 +5,11 @@ Small project to demonstrate FastAPI framework.
 ## TODO List
 
 - [x] Dockerize applicaiton
-- [ ] Write test tempalte cases using pytest/requests
+- [ ] Write tempalte test cases using pytest/requests
 - [ ] Integrate project with database
 - [ ] Extend API with CRUD and logic
 - [ ] Implement performance test of application (locust is can be used possibly)
+- [ ] Implement basic UI
 
 
 ## Local run
