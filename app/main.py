@@ -1,4 +1,3 @@
-import json
 from dataclasses import dataclass, field
 
 from fastapi import FastAPI, HTTPException, Response
@@ -14,13 +13,13 @@ class Channel:
     description: str = ""
 
 
-channels: dict[str, Channel] = {}
-
-with open("channels.json", encoding="utf8") as file:
-    channels_raw = json.load(file)
-    for channel_raw in channels_raw:
-        channel = Channel(**channel_raw)
-        channels[channel.id] = channel
+# DB mock data
+channels: dict[str, Channel] = {'1': Channel(id='1', name='Albert Sodel', tags=['Python', 'QA', 'Automation'],
+                                             description='Quality Assurance engineer with 10y of experience'),
+                                '2': Channel(id='2', name='Adam Hoffmann', tags=['java', 'backend', 'spring'],
+                                             description='Java developer with 5y of experience'),
+                                '3': Channel(id='3', name='John Doe', tags=['rust', 'embeded'],
+                                             description='Embeded systems developer')}
 
 
 @app.get("/")

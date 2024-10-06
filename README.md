@@ -4,8 +4,8 @@ Small project to demonstrate FastAPI framework.
 
 ## TODO List
 
-- [x] Dockerize applicaiton
-- [ ] Write tempalte test cases using pytest/requests
+- [x] Dockerize application
+- [ ] Write template test cases using pytest/requests
 - [ ] Integrate project with database
 - [ ] Extend API with CRUD and logic
 - [ ] Implement performance test of application (locust is can be used possibly)
@@ -37,3 +37,12 @@ Docker service is created. Project directory will be monitored against the chang
 ```
 docker-compose up --build
 ```
+
+## Run test cases for the application
+
+Open project root application and run the following command to run test cases.
+
+```
+pytest
+```
+
