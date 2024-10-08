@@ -1,5 +1,5 @@
 # Dockerfile consits of the instructions to build the docker image for the FastAPI application
-
+# TODO: Fix docker deployment issue
 FROM python:latest
 
 # set the working directory

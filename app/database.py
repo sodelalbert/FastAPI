@@ -10,4 +10,4 @@ engine = create_engine(
 )
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-BaseORM = declarative_base() # BaseORM is the base class for the ORM
+BaseORM = declarative_base() # BaseORM is the base class to model database tables

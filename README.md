@@ -5,7 +5,7 @@ Small project to demonstrate FastAPI framework.
 ## TODO List
 
 - [x] Dockerize application
-- [ ] Write template test cases using pytest/requests
+- [x] Write template test cases using pytest/requests
 - [ ] Integrate project with database
 - [ ] Extend API with CRUD and logic
 - [ ] Implement performance test of application (locust is can be used possibly)
@@ -18,7 +18,7 @@ Small project to demonstrate FastAPI framework.
 Changes to source code will be automatically tracked by uvicorn and the server will be restarted automatically. Not including data repositories. 
 ```
 pip install -r requirements.txt
-uvicorn main:app --host 0.0.0.0 --port 8080 --reload
+uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
 ```
 
 ## Docker container build and run
